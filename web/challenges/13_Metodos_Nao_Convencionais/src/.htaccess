@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} "=/1290d5fdb7921ab3/hiddenflagpagewow.php"
+RewriteCond %{REQUEST_METHOD} !^(POST|OPTIONS)
+RewriteRule .* - [F]

@@ -1,0 +1,13 @@
+# Atualizado :)
+User-agent: *
+Disallow: /
+Disallow: /w/
+Disallow: /api/
+Disallow: /trap/
+Disallow: /test/Special:
+Disallow: /test/Spezial:
+Disallow: /test/Spesial:
+Disallow: /test/Special%3A
+Disallow: /test/Spezial%3A
+Disallow: /test/Spesial%3A
+

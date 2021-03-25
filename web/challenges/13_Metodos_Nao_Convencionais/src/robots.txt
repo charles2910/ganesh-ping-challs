@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /phpinfo.php
+# Later: Disallow: /68696464656e666c616770616765776f772e706870

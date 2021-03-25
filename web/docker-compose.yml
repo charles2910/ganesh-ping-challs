@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  ganesh-a:
+    image: ganesh/container-a:1.0
+    container_name: ganesh-a
+    restart: always
+    ports:
+      - "1330:80"
+
+  ganesh-b:
+    image: ganesh/container-b:1.0
+    container_name: ganesh-b
+    restart: always
+    ports:
+      - "1331:80"
+
+  ganesh-c:
+    image: ganesh/container-c:1.0
+    container_name: ganesh-c
+    restart: always
+    ports:
+      - "1332:80"
+
+  ganesh-s1:
+    image: ganesh/container-s1:1.0
+    container_name: ganesh-s1
+    restart: always
+    ports:
+      - "1333:80"
+
+  ganesh-s2:
+    image: ganesh/container-s2:1.0
+    container_name: ganesh-s2
+    restart: always
+    ports:
+      - "1334:80"
+
+  ganesh-s3:
+    image: ganesh/container-s3:1.0
+    container_name: ganesh-s3
+    restart: always
+    ports:
+      - "1335:80"

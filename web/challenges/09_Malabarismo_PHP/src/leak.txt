@@ -1,0 +1,14 @@
+<?php
+// Funçoes auxiliares de login. Importar para arquivo principal!
+
+$admin_user = "pr0_@dm1n";
+$admin_pw = clean_hash("0e408306536730731920197920342119");
+
+function clean_hash($hash) {
+    return preg_replace("/[^0-9a-f]/", "", $hash);
+}
+
+function myhash($passwd) {
+    return clean_hash(md5(md5($passwd) . "SALT"));
+}
+?>
