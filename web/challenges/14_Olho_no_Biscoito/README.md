@@ -17,7 +17,7 @@
 
 # Injetando Veneno no Biscoito do Amigo
 
-## Dificuldade: **Easy** 
+## Dificuldade: **Medium** 
 
 ## Descrição
 
