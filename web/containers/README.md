@@ -29,6 +29,13 @@ Container especiais são indexados com (SX) e abrigam challs que necessitam de i
 - php@7.4.latest
 - Servidor apache@latest
 
+## CONTAINER [D]
+
+**Escopo:** Container criado para desafios de XSS equipado com NodeJs e Chromium. No momento possui apenas 1 desafio mas caso outros sejam adicionados novos challs o recomendado seria trabalhar os desafios de forma que cada aplicação seja aberta em uma porta distinta.
+
+- node@14.latest
+- Browser Chromium + Puppeteer
+
 ## CONTAINER [S1]
 
 **Escopo:** servidor apache com chall de command injection.
@@ -50,6 +57,16 @@ Container especiais são indexados com (SX) e abrigam challs que necessitam de i
 - php@7.4.latest
 - Servidor apache@latest
 - python2 python3 iputils-ping netcat
+
+## CONTAINER [S4]
+
+**Escopo:** Servidor Apache com 6 desafios iniciais de web mas que precisa ficar isolado devido ao fato de possuir configurações apache exclusivas, servir o protocolo HTTPS com um certificado auto-assinado.
+
+*Disclaimer: Precisa rodar na porta 80 e 443 devido à um dos desafios utilizar certificado*
+
+- php@7.4.latest
+- Servidor apache@latest
+- Custom Apache Configurations + Certificado HTTPS 
 
 ## RELAÇÃO CHALL x CONTAINER
 
@@ -75,6 +92,9 @@ Container [C]
 | -- 99_The_Vault (picoCTF)             hashLocation: 5103198102690911
 | -- 97_JWT_Scratchpad (picoCTF)        hashLocation: a37469330538541a
 
+Container [D]
+| -- 20_Ganesh_Travelers                hashLocation: Nenhum (Localizado na raíz)
+
 Container [S1]
 | -- 05_Sopa_de_Letrinhas               hashLocation: 6ca27ec5acb62291
 
@@ -84,8 +104,18 @@ Container [S2]
 Container [S3]
 | -- 98_Port_1337 (picoCTF)             hashLocation: 5e1a0b9bdd63da09
 
+Container [S4]
+| -- 19_Explorer_Challenges             hashLocation: Nenhum (Localizado na raíz)
+
 Nenhum Container Relacionado
 | -- 07_Rock_You: desafio de bruteforce, precisa criar um NGINX para garantir que robustez.
 | -- 08_Bolos_e_Tokens: feito em python, precisa adaptar para acesso remoto.
 | -- 18_Jornada_do_Heroi: idem bruteforce (ideal servidor com cache ativado!)
+
+Aposentados
+| -- 11_Explorador_Novato               hashLocation: 8d71abc9d4944ad0
 ```
+
+## DESAFIOS APOSENTADOS
+
+- **11 Explorador Novato:** Substituido pelo desafio *19 Explorer Challenges*
