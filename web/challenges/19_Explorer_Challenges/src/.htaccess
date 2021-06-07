@@ -1,0 +1,13 @@
+# Custom 404 Page
+ErrorDocument 404 /custom404.html
+
+# Allow Folder Listing
+Options +Indexes
+
+# Protecting Admin Page
+<Files administrative.html>
+    AuthName "Dialog prompt"
+    AuthType Basic
+    AuthUserFile /var/www/html/.htpasswd
+    Require valid-user
+</Files>

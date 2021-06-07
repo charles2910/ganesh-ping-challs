@@ -1,0 +1,12 @@
+{
+    "name": "Ganesh{SUch_a_Pr0gr3ss1v3_M4n1f3sT}",
+    "short_name": "Ganesh@Explorer",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#153e52",
+    "icons": [{
+      "src": "images/CampIcon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }]
+  }

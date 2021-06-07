@@ -1,0 +1,3 @@
+# Sai pra lá bots u.u
+User-agent: *
+Disallow: /backups/
