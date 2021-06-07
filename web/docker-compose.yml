@@ -22,6 +22,17 @@ services:
     ports:
       - "1332:80"
 
+  ganesh-d:
+    image: ganesh/container-d:1.0
+    container_name: ganesh-d
+    restart: always
+    ports:
+      - "2337:2337"
+    environment:
+      - SERVER_PORT=2337
+      - SERVER_URL=http://challs.ganeshicmc.com/
+      - SERVER_DOMAIN=challs.ganeshicmc.com
+
   ganesh-s1:
     image: ganesh/container-s1:1.0
     container_name: ganesh-s1
@@ -42,3 +53,11 @@ services:
     restart: always
     ports:
       - "1335:80"
+
+  ganesh-s4:
+    image: ganesh/container-s4:1.0
+    container_name: ganesh-s4
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"

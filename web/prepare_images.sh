@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## declare array of containers
-declare -a images=("A"  "B"  "C"  "S1"  "S2"  "S3")
+declare -a images=("A"  "B"  "C" "D" "S1"  "S2"  "S3" "S4")
 
 ## Starting the script
 echo "SCRIPT: CREATING DOCKER IMAGES"
