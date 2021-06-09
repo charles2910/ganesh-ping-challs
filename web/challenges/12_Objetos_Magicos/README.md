@@ -4,7 +4,7 @@
 
 ## Descrição
 
-@TODO descrição
+(Não precisa de descrição)
 
 ## Pré-requisitos
 

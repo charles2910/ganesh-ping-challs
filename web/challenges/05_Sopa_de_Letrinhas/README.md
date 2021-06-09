@@ -4,7 +4,7 @@
 
 ## Descrição
 
-@TODO descrição
+Você consegue extrair a flag do arquivo `/flag.txt`?
 
 ## Pré-requisitos
 

@@ -4,7 +4,7 @@
 
 ## Descrição
 
-@TODO descrição
+Meu sobrinho fez um site e jogou na minha cara. Você consegue me ajudar a encontrar suas vulnerabilidades?
 
 ## Pré-requisitos
 

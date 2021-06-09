@@ -4,7 +4,7 @@
 
 ## Descrição
 
-@TODO descrição
+A gente já te deu uma dica, você sacou? ;)
 
 ## Pré-requisitos
 

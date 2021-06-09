@@ -4,7 +4,12 @@
 
 ## Descrição
 
-@TODO descrição
+Creenciais para acessar o desafio:
+
+- Email: john@john.com
+- Senha: 123
+
+Obs: a flag começa com `Ganesh{T`.
 
 ## Pré-requisitos
 
@@ -21,7 +26,12 @@
 
 ## Descrição
 
-@TODO descrição
+Creenciais para acessar o desafio:
+
+- Email: john@john.com
+- Senha: 123
+
+Obs: a flag começa com `Ganesh{S`.
 
 ## Pré-requisitos
 

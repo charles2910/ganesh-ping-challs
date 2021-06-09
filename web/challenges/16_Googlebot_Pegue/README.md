@@ -4,7 +4,7 @@
 
 ## Descrição
 
-@TODO descrição
+Dominado pela skynet, o site do guerra agora transmite mensagens apenas para os robôs e você agora terá que se disfarçar como um deles :O 
 
 ## Pré-requisitos
 
