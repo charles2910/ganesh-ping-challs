@@ -10,3 +10,4 @@ Eu tentei o clássico **login: admin** e **senha: admin** e a mensagem agora foi
 
 ![](https://i.imgur.com/eZKQKfU.png)
 
+Obs.: o objetivo desse desafio, na verdade, era utilizar alguma ferramenta que automatizasse o processo de bruteforce da senha!
