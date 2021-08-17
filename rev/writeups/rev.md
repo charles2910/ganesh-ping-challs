@@ -1,21 +1,21 @@
 # Write-ups Engenharia Reversa
 ## Challs com Writeup
-1. [Weird Comparison](#weirdcomparison)
+1. [Uma Comparação Esquisita](#weirdcomparison)
 2. [Não chore](#naochore)
 3. [Pode chorar](#podechorar)
 4. [So Many Words](#somanywords)
-5. [Crackme](#crackme)
+5. [CrackMe](#crackme)
 6. [Code](#code)
-7. [Você sabe crackear MD5?](#sabemd5)
+7. [A Queda do MD5](#sabemd5)
 8. [HackerTest](#hackertest)
-9. [Ghidra Challenge](#guidrachall)
+9. [Desafio Ghidra](#guidrachall)
 10. [JFCH](#jfch)
 11. [Entenda-me](#entendame)
 
 
-## Weird Comparison <a name="weirdcomparison"></a>
+## Uma Comparação Esquisita <a name="weirdcomparison"></a>
 ```
-Ifs nem sempre são tão seguros assim, é possível manipular o resultado deles usando o GDB?
+Para manter esse programa seguro, nós utilizamos uma checagem (um 'if'), ele deve estar seguro... mas será que você pode testar ele no GDB?
 ```
 
 Como o enunciado diz, a intenção do desafio é manipular o resultado de um `if`.
@@ -89,7 +89,9 @@ Flag: `Ganesh{fl0w_m4nipulator}`
 ## Não chore <a name="naochore"></a>
 
 ```
-Qual o valor retornado pelo programa em anexo?
+Recuperamos esse programa dos inimigos, e precisamos saber o valor de retorno dele.
+
+OBS: A flag NÃO está no formato tradicional.
 ```
 
 ```
@@ -123,7 +125,10 @@ Flag: `0`
 ## Pode chorar <a name="podechorar"></a>
 
 ```
-E agora, qual o valor retornado pelo programa em anexo?
+Nossos especialistas ficaram impressionados pelo seu desempenho no último desafio, e resolveram testar suas habilidades ainda mais.
+Qual o valor retornado pelo programa em anexo?
+
+Obs: A flag NÃO está no formato tradicional.
 ```
 
 ```
@@ -170,9 +175,9 @@ Flag: `10`
 ## So Many Words <a name="somanywords"></a>
 
 ```
-Perdi meu trabalho de BD, tenho certeza que algumas informações importantes estavam lá dentro, pode me ajudar a recuperar?
+Perdemos um banco de dados importante para a resistência, tenho certeza que algumas informações importantes estavam lá dentro, pode nos ajudar a recuperar?
 
-A flag está no formato Ganesh{}
+Obs: A flag está no formato Ganesh{}.
 ```
 
 Tomando que existe texto importante no binário, o comando "strings chall1" pode mostrar eles.
@@ -200,10 +205,11 @@ Ganesh{using_grep_is_easy}
 ```
 
 
-## Crackme <a name="crackme"></a>
+## CrackMe <a name="crackme"></a>
 
 ```
-Achei esse programa na internet, mas ele pede uma chave... Será que você consegue crackear?
+Obtemos esse programa ~~~definitivamente legal~~, mas ele pede uma chave...
+Será que você consegue crackear?
 ```
 
 Abrindo no gdb, e executando `disassemble main` podemos ver que a *main* possui uma função chamada *check*:
@@ -349,7 +355,8 @@ Flag: `Ganesh{ju5t_s0m3_1fs}`
 ## Code <a name="code"></a>
 
 ```
-Esse programa contem um codigo muito importante, mas nao conseguimos entender o que ele quer dizer. Qual a mensagem contida no programa?
+Esse programa contem um codigo muito importante, mas não conseguimos entender o que ele quer dizer. 
+Qual a mensagem contida no programa?
 ```
 
 Rodando o programa, obtemos a string `jdqhvk{dyh_fdhvdu}`, que tem o formato de uma flag,
@@ -358,10 +365,10 @@ com ROT23
 
 Flag: `ganesh{ave_caesar}`
 
-## Você sabe crackear MD5? <a name="sabemd5"></a>
+## A Queda do MD5 <a name="sabemd5"></a>
 
 ```
-Tente crackear o nosso checker de md5...
+Precisamos de sua ajuda para testar nosso *checker* de MD5.
 ```
 
 O programa calcula o md5 do primeiro argumento (argv[1]) e compara com uma constante. Se forem iguais, ele
@@ -410,9 +417,11 @@ Flag: `Ganesh{wh0_n33d5_brut3f0rc3_wh3n_y0u_have_gdb}`
 ## hacker_test <a name="hackertest"></a>
 
 ```
-O teste final para se transformar em um hackemen de verdade é passar nesse teste. Sera que voce consegue?
+O teste final para se transformar em um *hackermen* de verdade é passar nesse teste. Será que você consegue?
 
 A flag não está no formato usual.
+
+Cada palavra está separada por um `_`
 ```
 
 Para análise do binário podemos usar o comando "objdump -d hacker_test".
@@ -460,10 +469,11 @@ Pelos nomes podemos propor como flag:
 ```
 Flag_sao_as_funcoes_em_ordem_de_chamada
 ```
-## ghidra_challenge <a name="guidrachall"></a>
+## Desafio Ghidra <a name="guidrachall"></a>
 
 ```
-Queremos crackear o melhor programa de engenharia reversa que o dinheiro pode comprar, voce consegue descobrir a chave de ativação?
+Queremos crackear o melhor programa de engenharia reversa que o dinheiro pode comprar, você consegue descobrir a chave de ativação?
+
 ```
 
 Pelo nome do chall começamos a analisar o código com a ferramenta "ghidra" para análise do binário. Com ela podemos observar esse decompile para a main.
@@ -784,7 +794,8 @@ Ganesh{GhidraIsOverPowered}    #desfeito o xor 0x20
 ## JFCH <a name="jfch"></a>
 
 ```
-Muitas vezes o caminho atual não leva a lugar nenhum, para obter resultados é necessário tomar novas decisões
+*"Muitas vezes o caminho atual não leva a lugar nenhum, para obter resultados é necessário tomar novas decisões."*
+\- **ARANTES, Sr.**
 ```
 
 Se olharmos as funções do programa (`nm JFCH | grep -P '[0-9a-f]+ T .+'`), existe uma chamada `gera_flag`. Que tal rodar ela?
@@ -801,7 +812,7 @@ Flag: `Ganesh{voce_traiu_o_fluxo}`
 ## Entenda-me <a name="entendame"></a>
 
 ```
-Na previsão dos resultados jaz a verdadeira resposta, apenas o computeiro escolhido pode compreender algo sem a necessidade de executar antes!
+Na previsão dos resultados jaz a verdadeira resposta, apenas o escolhido pode compreender algo sem a necessidade de executar antes!
 ```
 
 A função main printa `printf("Ganesh{%d_eh_a_resposta}", func(10));`, o que nos diz como formatar
