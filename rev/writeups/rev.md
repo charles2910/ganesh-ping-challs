@@ -1,4 +1,4 @@
-# Write-ups Engenharia Reversa/Pwning
+# Write-ups Engenharia Reversa
 ## Challs com Writeup
 1. [Weird Comparison](#weirdcomparison)
 2. [Não chore](#naochore)
