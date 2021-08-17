@@ -222,7 +222,7 @@ Continua no próximo episódio. Toma sua flag
 Ganesh{p0wer_0f_fr13ndsh1p}
 ```
 
-# [GUIDED] Testando shellcodes <a name="testshellcode"></a>
+# Testando shellcodes <a name="testshellcode"></a>
 ```
 Consegui um shellcode, mas não sei como testá-lo. Você pode testar para mim? Ele foi escrito em 32-bits.
 
